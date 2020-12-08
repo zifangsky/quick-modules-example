@@ -1,12 +1,12 @@
 package cn.zifangsky.quickmodules.example.controller;
 
-import cn.zifangsky.quickmodules.common.common.SpringContextUtils;
+import cn.zifangsky.easylimit.permission.annotation.RequiresPermissions;
 import cn.zifangsky.quickmodules.example.model.Greeting;
 import cn.zifangsky.quickmodules.example.model.HelloMessage;
 import cn.zifangsky.quickmodules.example.service.TestService;
 import cn.zifangsky.quickmodules.log.annotation.WebLog;
+import cn.zifangsky.quickmodules.user.common.SpringContextUtils;
 import cn.zifangsky.quickmodules.user.model.SysUser;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,8 +16,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * 测试使用

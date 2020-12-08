@@ -1,9 +1,9 @@
 package cn.zifangsky.quickmodules.example.config;
 
-import cn.zifangsky.quickmodules.common.common.SpringContextUtils;
 import cn.zifangsky.quickmodules.log.model.UserInfo;
 import cn.zifangsky.quickmodules.log.plugins.AbstractLogManager;
 import cn.zifangsky.quickmodules.user.common.Constants;
+import cn.zifangsky.quickmodules.user.common.SpringContextUtils;
 import cn.zifangsky.quickmodules.user.model.SysUser;
 
 import javax.servlet.http.HttpSession;
